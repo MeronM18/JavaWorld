@@ -14,9 +14,7 @@ public class ReverseString {
         System.out.println("The reversed string is: ");
             for (int i = userInput.length() - 1; i >= 0; i--) { //for loop that sets i equal to the length of string - 1
                 System.out.print(userInput.charAt(i)); //i decreases by 1 and prints each character starting from the end of the string
-            }
-
-        
+            }        
 
         scanner.close(); //close scanner
     }
