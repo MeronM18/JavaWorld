@@ -1,4 +1,4 @@
-package JavaProjects;
+package JavaProjects.ReverseString;
 
 import java.util.Scanner;
 

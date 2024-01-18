@@ -1,4 +1,4 @@
-package JavaProjects;
+package JavaProjects.MetricConverter;
 
 import java.util.Scanner;
 
