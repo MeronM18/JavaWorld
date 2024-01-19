@@ -172,7 +172,7 @@ public class MetricConverter {
                             return value * 2.54;
                         case "feet":
                         case "ft":
-                            return value * 12;
+                            return value / 12;
                         case "yards": 
                         case "yds":
                         case "yd":
