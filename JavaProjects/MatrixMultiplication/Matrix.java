@@ -1,4 +1,4 @@
-package JavaProjects.MatrixMultiplication; //Meron Matti
+package MatrixMultiplication; //Meron Matti
 
 import java.io.*; // Import the File class
 import java.util.*; // Import the Arrays class
