@@ -11,8 +11,7 @@ public class Animal {
     }
 
     public static void main(String[] args) {
-        Animal myAnimal = new Animal();
-        Fish myFish = new Fish();
+        Animal myAnimal = new Animal(); 
         Zebra myZebra = new Zebra();
 
         myAnimal.isMammal();
@@ -22,8 +21,6 @@ public class Animal {
 }
 
 class Fish extends Animal {
-    private double sizeInFeet;
-
     public void canEat() {
         System.out.println("This is a method from the Fish class.");
     }

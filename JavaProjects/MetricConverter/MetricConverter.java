@@ -80,6 +80,10 @@ public class MetricConverter {
                         case "g":
                         case "gram":
                             return value * 453.59237;
+                        case "oz":
+                        case "ounces":
+                        case "ounce":
+                            return value * 16;
                         default:
                             break;
                     }
