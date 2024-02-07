@@ -1,0 +1,261 @@
+Getting Started: 
+
+## public static void main(String[] args) {
+  System.out.println("Hello World");
+} 
+//syntax to run a code in java
+
+System.out.println(".....");
+//syntax to print an output
+
+##
+String - stores text, such as "Hello". String values are surrounded by double quotes
+int - stores integers (whole numbers), without decimals, such as 123 or -123
+float - stores floating point numbers, with decimals, such as 19.99 or -19.99
+char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
+boolean - stores values with two states: true or false
+##
+
+##
+Primitive data types - includes byte, short, int, long, float, double, boolean and char
+Non-primitive data types - such as String, Arrays and Classes (you will learn more about these in a later chapter)
+##
+
+##
+String txt = "Hello World";
+System.out.println(txt.toUpperCase());   // Outputs "HELLO WORLD"
+System.out.println(txt.toLowerCase());   // Outputs "hello world"
+##
+
+## //finds the index/position of a specified text in a string
+String txt = "Please locate where 'locate' occurs!";
+System.out.println(txt.indexOf("locate")); // Outputs 7
+##
+
+## //concatenate method
+String firstName = "John ";
+String lastName = "Doe";
+System.out.println(firstName.concat(lastName));
+##
+
+## //when putting quotes within a string
+Escape character	Result	Description
+\'	'	Single quote
+\"	"	Double quote
+\\	\	Backslash
+##
+
+## //other common escape sequences//
+Code	Result	Try it
+\n	New Line	
+\r	Carriage Return	
+\t	Tab	
+\b	Backspace	
+\f	Form Feed	
+##
+
+## //math methods
+The Math.max(x,y) method can be used to find the highest value of x and y:
+Math.max(5, 10);
+The Math.min(x,y) method can be used to find the lowest value of x and y:
+Math.min(5, 10);
+The Math.sqrt(x) method returns the square root of x:
+Math.sqrt(64);
+The Math.abs(x) method returns the absolute (positive) value of x:
+Math.abs(-4.7);
+Math.random() returns a random number between 0.0 (inclusive), and 1.0 (exclusive):
+Math.random();
+int randomNum = (int)(Math.random() * 101);  // 0 to 100
+##
+
+##
+Short Hand If...Else
+There is also a short-hand if else, which is known as the ternary operator because it consists of three operands.
+
+It can be used to replace multiple lines of code with a single line, and is most often used to replace simple if else statements:
+
+variable = (condition) ? expressionTrue :  expressionFalse;
+##
+
+## //using switch statement
+int day = 4;
+switch (day) {
+  case 1:
+    System.out.println("Monday");
+    break;
+  case 2:
+    System.out.println("Tuesday");
+    break;
+  case 3:
+    System.out.println("Wednesday");
+    break;
+  case 4:
+    System.out.println("Thursday");
+    break;
+  case 5:
+    System.out.println("Friday");
+    break;
+  case 6:
+    System.out.println("Saturday");
+    break;
+  case 7:
+    System.out.println("Sunday");
+    break;
+  default:
+    System.out.println("Looking forward to the Weekend");
+}
+// Outputs "Thursday" (day 4)
+##
+
+## //while loop syntax
+int i = 0;
+while (i < 5) {
+  System.out.println(i);
+  i++;
+}
+##
+
+## //do while loop
+The do/while loop is a variant of the while loop. This loop will execute the code block once, 
+before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+Syntax
+
+do {
+  // code block to be executed
+}
+while (condition);
+
+
+Example
+int i = 0;
+do {
+  System.out.println(i);
+  i++;
+}
+while (i < 5);
+##
+
+## //for looop syntax
+for (statement 1; statement 2; statement 3) {
+  // code block to be executed
+}
+Statement 1 is executed (one time) before the execution of the code block.
+
+Statement 2 defines the condition for executing the code block.
+
+Statement 3 is executed (every time) after the code block has been executed.
+
+The example below will print the numbers 0 to 4:
+
+Example
+for (int i = 0; i < 5; i++) {
+  System.out.println(i);
+}
+##
+
+## //for each loop
+There is also a "for-each" loop, which is used exclusively to loop through elements in an array:
+
+SyntaxGet your own Java Server
+for (type variableName : arrayName) {
+  // code block to be executed
+}
+The following example outputs all elements in the cars array, using a "for-each" loop:
+
+Example
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+for (String i : cars) {
+  System.out.println(i);
+}
+##
+
+## //using break statement inside loop
+for (int i = 0; i < 10; i++) {
+  if (i == 4) {
+    break;
+  }
+  System.out.println(i);
+}
+##
+
+## //using continue statement inside loop
+for (int i = 0; i < 10; i++) {
+  if (i == 4) {
+    continue;
+  }
+  System.out.println(i);
+}
+##
+
+## //creating Arrays
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+int[] myNum = {10, 20, 30, 40};
+##
+
+## //accessing elements in an array
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+System.out.println(cars[0]);
+// Outputs Volvo 
+[0] is the first element in an array
+##
+
+## //changing elements in an array
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+cars[0] = "Opel";
+System.out.println(cars[0]);
+##
+
+## //find length of an array
+To find out how many elements an array has, use the length property:
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+System.out.println(cars.length);
+##
+
+## //how to loop through an array - different loops
+FOR LOOP:
+
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+for (int i = 0; i < cars.length; i++) {
+  System.out.println(cars[i]);
+}
+
+FOR EACH LOOP:
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+for (String i : cars) {
+  System.out.println(i);
+}
+##
+
+## //multidimensional Arrays
+int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} }; //creates a two-d array
+##
+
+## //access elements in multidimensional Arrays
+To access the elements of the myNumbers array, specify two indexes: one for the array,
+and one for the element inside that array. This example accesses the third element (2) in the second array (1) of myNumbers:
+
+Example
+int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
+System.out.println(myNumbers[1][2]); // Outputs 7
+##
+
+**Remember that: Array indexes start with 0: [0] is the first element. [1] is the second element, etc.**
+
+## //changing values in two-d array
+int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
+myNumbers[1][2] = 9;
+System.out.println(myNumbers[1][2]); // Outputs 9 instead of 7
+##
+
+## //loop through a multidimensional array
+public class Main {
+  public static void main(String[] args) {
+    int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
+    for (int i = 0; i < myNumbers.length; ++i) {
+      for(int j = 0; j < myNumbers[i].length; ++j) {
+        System.out.println(myNumbers[i][j]);
+      }
+    }
+  }
+}
+##

@@ -181,6 +181,10 @@ public class MetricConverter {
                         case "yds":
                         case "yd":
                             return value / 36;
+                        case "meters":
+                        case "meter":
+                        case "m":
+                            return value / 39.3700787;
                         default:
                             break;
                     }
