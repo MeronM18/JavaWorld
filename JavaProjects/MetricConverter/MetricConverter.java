@@ -201,6 +201,12 @@ public class MetricConverter {
                         case "millimeter":
                         case "mm": 
                             return value * 10;
+                        case "meter":
+                        case "m":
+                        case "meters":
+                            return value / 100;
+                        case "default":
+                            break;
                         default:
                             break;
                     }
