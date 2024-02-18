@@ -3,6 +3,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "BubbleSortG",
+      "request": "launch",
+      "mainClass": "Generics.BubbleSortG",
+      "projectName": "JavaWorld_b59d9f3f"
+    },
+    {
+      "type": "java",
+      "name": "MergeSortG",
+      "request": "launch",
+      "mainClass": "Generics.MergeSortG",
+      "projectName": "JavaWorld_b59d9f3f"
+    },
+    {
+      "type": "java",
+      "name": "Practice",
+      "request": "launch",
+      "mainClass": "CodeHelp.CodeHelp.Practice",
+      "projectName": "JavaWorld_b59d9f3f"
+    },
+    {
+      "type": "java",
+      "name": "Fibonacci",
+      "request": "launch",
+      "mainClass": "Fibonacci",
+      "projectName": "JavaWorld_b59d9f3f"
+    },
+    {
+      "type": "java",
       "name": "App1",
       "request": "launch",
       "mainClass": "App1",
