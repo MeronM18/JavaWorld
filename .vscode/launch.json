@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Password",
+      "request": "launch",
+      "mainClass": "Password.Password",
+      "projectName": "JavaWorld_b59d9f3f"
+    },
+    {
+      "type": "java",
       "name": "BubbleSortG",
       "request": "launch",
       "mainClass": "Generics.BubbleSortG",
