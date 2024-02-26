@@ -1,0 +1,6 @@
+A window must have either a frame, dialog, or another window defined as its owner when it's constructed.
+
+In a multi-screen environment, you can create a Window on a different screen device by constructing the Window with Window(Window, GraphicsConfiguration). The GraphicsConfiguration object is one of the GraphicsConfiguration objects of the target screen device.
+
+In a virtual device multi-screen environment in which the desktop area could span multiple physical screen devices, the bounds of all configurations are relative to the virtual device coordinate system. The origin of the virtual-coordinate system is at the upper left-hand corner of the primary physical screen. Depending on the location of the primary screen in the virtual device, negative coordinates are possible, as shown in the following figure.
+
