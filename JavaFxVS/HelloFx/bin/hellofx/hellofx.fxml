@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hellofx.Controller">
+   <children>
+      <Label layoutX="204.0" layoutY="26.0" text="Metric Converter" textFill="#2200ff">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="86.0" text="How It Works?" textFill="#565656">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="116.0" text="- Enter value and unit of measure" textFill="#565656" />
+      <Label layoutX="14.0" layoutY="134.0" text="- Select unit to convert to" textFill="#565656" />
+      <Label layoutX="14.0" layoutY="152.0" text="- Get the metric conversion" textFill="#565656" />
+      <ChoiceBox fx:id="firstUnit" layoutX="40.0" layoutY="208.0" prefWidth="150.0" />
+      <TextField fx:id="unitValue" layoutX="235.0" layoutY="208.0" promptText="Enter Value:" />
+      <ChoiceBox fx:id="finalUnit" layoutX="424.0" layoutY="208.0" prefWidth="150.0" />
+      <Label layoutX="88.0" layoutY="183.0" text="First Unit" textFill="WHITE" />
+      <Label layoutX="475.0" layoutY="183.0" text="Final Unit" textFill="WHITE" />
+      <Button fx:id="convertButton" layoutX="231.0" layoutY="259.0" mnemonicParsing="false" onAction="#convertButtonOnAction" prefHeight="35.0" prefWidth="157.0" style="-fx-border-radius: 45; -fx-background-radius: 45; -fx-background-color: #FF0000;" text="Convert" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="conversionLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="180.0" layoutY="330.0" prefHeight="26.0" prefWidth="258.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
